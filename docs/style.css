@@ -75,7 +75,6 @@ h2 {
 }
 
 /* Hero */
-<<<<<<< HEAD
 :root {
     --neon-green: #39ff14;
     --text-white: #ffffff;
@@ -172,38 +171,6 @@ h2 {
 
 
 
-=======
-.hero h1 {
-    font-size: clamp(2rem, 8vw, 4rem);
-    margin-bottom: 20px;
-    line-height: 1;
-}
-
-.hero p {
-    color: var(--text-dim);
-    font-size: 1.1rem;
-    max-width: 650px;
-    margin: 0 auto 40px;
-}
-
-.btn-github {
-    display: inline-block;
-    padding: 12px 35px;
-    border: 1px solid var(--green-shark);
-    color: var(--green-shark);
-    text-decoration: none;
-    border-radius: 4px;
-    font-weight: bold;
-    transition: 0.4s;
-}
-
-.btn-github:hover {
-    background: var(--green-shark);
-    color: #000;
-    box-shadow: 0 0 15px rgba(0, 242, 255, 0.5);
-}
-
->>>>>>> 9373b35b9f0fac42ba03d690193dcaa9bd6363f8
 /* Features Grid */
 .features-grid {
     display: grid;
