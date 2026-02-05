@@ -1,0 +1,294 @@
+/* PALETA DE CORES SHARK RAIDER */
+:root {
+    --bg-dark: #050505;
+    --bg-secondary: #121212;
+    --green-shark: #39ff14;
+    --text-primary: #ffffff;
+    --text-dim: #999999;
+    --accent-red: #ff3e3e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+}
+
+/* Navegação */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(5, 5, 5, 0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #222;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: var(--text-dim);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--green-shark);
+}
+
+/* Seções */
+section {
+    padding: 120px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: var(--green-shark);
+    text-transform: uppercase;
+}
+
+/* Hero */
+<<<<<<< HEAD
+:root {
+    --neon-green: #39ff14;
+    --text-white: #ffffff;
+    --text-dim: #cccccc;
+}
+
+.hero {
+    height: 100%;
+    width: 100;
+    /* Substitua 'shark-bg.jpg' pelo nome do seu arquivo de imagem */
+    background: linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0.7)), url('shark-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinha o conteúdo à direita */
+    position: relative;
+}
+
+.content-wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end; /* Garante que o container interno empurre o texto */
+}
+
+.hero-content {
+    max-width: 600px;
+    text-align: right; /* Alinha o texto à direita */
+    padding-right: 20px;
+}
+
+.hero-content h1 {
+    font-size: clamp(2.5rem, 5vw, 3.8rem);
+    color: var(--text-white);
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.neon {
+    color: var(--neon-green);
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.white {
+    color: var(--text-primary);
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: var(--text-dim);
+    margin-bottom: 40px;
+    margin-left: auto; /* Mantém o parágrafo alinhado à direita */
+}
+
+/* Estilo do Botão com efeito de "Acender" */
+.btn-github {
+    display: inline-block;
+    padding: 15px 50px;
+    border: 2px solid var(--neon-green);
+    color: var(--neon-green);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+    background: transparent;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-github:hover {
+    background-color: var(--neon-green);
+    color: #000;
+   
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .hero {
+        background-position: 25% center; /* Ajusta o fundo para o tubarão aparecer mais */
+        justify-content: center;
+    }
+    .hero-content {
+        text-align: center;
+        padding-right: 0;
+    }
+    .hero-content p {
+        margin: 0 auto 40px;
+    }
+}
+
+
+
+=======
+.hero h1 {
+    font-size: clamp(2rem, 8vw, 4rem);
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
+.hero p {
+    color: var(--text-dim);
+    font-size: 1.1rem;
+    max-width: 650px;
+    margin: 0 auto 40px;
+}
+
+.btn-github {
+    display: inline-block;
+    padding: 12px 35px;
+    border: 1px solid var(--green-shark);
+    color: var(--green-shark);
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.btn-github:hover {
+    background: var(--green-shark);
+    color: #000;
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.5);
+}
+
+>>>>>>> 9373b35b9f0fac42ba03d690193dcaa9bd6363f8
+/* Features Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.feature-card {
+    background: var(--bg-secondary);
+    padding: 40px 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.feature-card i {
+    font-size: 2rem;
+    color: var(--green-shark);
+    margin-bottom: 15px;
+}
+
+.feature-card h3 { margin-bottom: 10px; }
+.feature-card p { color: var(--text-dim); font-size: 0.9rem; }
+
+/* Terminal Simulation */
+.terminal-window {
+    background: #000;
+    border: 1px solid #333;
+    border-radius: 6px;
+    max-width: 700px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+}
+
+.terminal-header {
+    background: #1a1a1a;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.dot { width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; }
+.red { background: #ff5f56; }
+.yellow { background: #ffbd2e; }
+.green { background: #27c93f; }
+.terminal-title { font-size: 12px; color: #666; margin-left: 10px; }
+
+.terminal-body {
+    padding: 20px;
+    height: 300px;
+    font-family: 'Courier New', monospace;
+    color: var(--green-shark);
+    overflow-y: hidden;
+}
+
+/* Donation & Footer */
+.btn-donate {
+    padding: 15px 40px;
+    background: #ffbd2e;
+    color: #000;
+    text-decoration: none;
+    font-weight: 800;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.contact-links a {
+    font-size: 2rem;
+    color: var(--text-dim);
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+.contact-links a:hover { color: var(--green-shark); }
+
+footer {
+    padding: 40px;
+    border-top: 1px solid #1a1a1a;
+    color: #444;
+    font-size: 0.8rem;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .nav-container { gap: 10px; }
+    nav a { font-size: 0.6rem; }
+}
