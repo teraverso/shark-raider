@@ -2,7 +2,7 @@
 
 **Offensive Security Firmware for ESP32 CYD (Cheap Yellow Display)**
 
-Version: 1.0.1
+Version: 1.0.2
 
 ---
 
