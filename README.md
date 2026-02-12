@@ -125,13 +125,13 @@ After boot, you'll see the main menu with four options:
 4. View real-time statistics:
    - Current channel
    - Packets sent
-5. Tap "STOP" to end attack
+5. Tap "BACK" to end attack
 
 ### Rick Roll
 1. Select "RICK ROLL" from main menu
 2. Attack starts automatically
 3. Broadcasts Rick Astley lyrics as SSIDs
-4. Tap "STOP" to end attack
+4. Tap "BACK" to end attack
 
 ### Evil Portal
 1. Select "EVIL PORTAL" from main menu
@@ -140,8 +140,8 @@ After boot, you'll see the main menu with four options:
 4. Monitor:
    - Connected clients
    - Captured credentials
-5. Tap "STOP" to end portal
-6. Credentials are logged to Serial (115200 baud)
+5. Tap "BACK" to end portal
+6. Tap "NEXT" to view credentials
 
 ---
 
@@ -186,71 +186,6 @@ SHARK_RAIDER/
 
 ---
 
-## 🛠️ Customization
-
-### Modify SSIDs
-Edit `src/wifi_attack.cpp`:
-```cpp
-const char* FUNNY_SSIDS[] = {
-    "Your Custom SSID 1",
-    "Your Custom SSID 2",
-    // Add more...
-};
-```
-
-### Change Portal SSID
-Edit `include/config.h`:
-```cpp
-#define PORTAL_AP_NAME "Your Portal Name"
-```
-
-### Adjust Colors
-Edit `include/config.h`:
-```cpp
-#define BACKGROUND_COLOR TFT_BLACK
-#define TEXT_COLOR TFT_WHITE
-#define ACCENT_COLOR TFT_CYAN
-#define TITLE_COLOR TFT_RED
-```
-
-### Touch Calibration
-If touch is inaccurate, adjust in `src/display.cpp`:
-```cpp
-x = map(p.x, 200, 3700, 0, SCREEN_WIDTH);
-y = map(p.y, 240, 3800, 0, SCREEN_HEIGHT);
-```
-
----
-
-## 🐛 Troubleshooting
-
-### Display Not Working
-- Check TFT_eSPI configuration matches your hardware
-- Verify SPI pins in `platformio.ini`
-- Try different rotation: `tft->setRotation(1)` to `(3)`
-
-### Touch Not Responding
-- Calibrate touch coordinates
-- Check TOUCH_CS pin definition
-- Verify touch controller type (XPT2046 vs GT911)
-
-### WiFi Not Working
-- Ensure ESP32 WiFi is enabled
-- Check antenna connection (if external)
-- Verify channel range (1-13 for most regions)
-
-### Upload Fails
-- Hold BOOT button during upload
-- Try lower upload speed (115200)
-- Check USB cable (must support data)
-- Press RST button after upload
-
-### Low Memory Warnings
-- Reduce BEACON_RATE_LIMIT in config.h
-- Disable debug output (set DEBUG_MODE to 0)
-- Use shorter SSID lists
-
----
 
 ## 📚 Resources
 
