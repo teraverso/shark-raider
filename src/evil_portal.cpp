@@ -258,7 +258,7 @@ void EvilPortalManager::end() {
 // Start Access Point
 void EvilPortalManager::startAP() {
     WiFi.mode(WIFI_MODE_AP);
-    WiFi.softAP(apName.c_str(), PORTAL_PASSWORD, apChannel, 0, PORTAL_MAX_CONNECTIONS);
+    WiFi.softAP(apName.c_str(), PORTAL_PASSWORD, apChannel, false, PORTAL_MAX_CONNECTIONS);
     
     // Configure IP
     IPAddress local_ip(192, 168, 4, 1);

@@ -13,9 +13,9 @@
         <div class="nav-container">
             <a href="#home">Home</a>
             <a href="#features">Features</a>
-            <a href="#simulacao">Firmware</a>
+            <a href="#simulacao">Web Flash</a>
             <a href="#doacao">Donate</a>
-            <a href="#contato">Contact</a>
+            <a href="#contato">Community</a>
         </div>
     </nav>
 
@@ -60,18 +60,19 @@
         </section>
 
         <section id="simulacao">
-            <h2>Shark Raider OS</h2>
-            <div class="terminal-window">
-                <div class="terminal-header">
-                    <div class="dot red"></div>
-                    <div class="dot yellow"></div>
-                    <div class="dot green"></div>
-                    <span class="terminal-title">shark_raider_v1.0.2</span>
-                </div>
-                <div class="terminal-body" id="terminal-content">
-                    <p class="line">> System Ready.</p>
-                </div>
-            </div>
+            <h2>Web Flash</h2>
+            <!-- Componente do Instalador -->
+<div class="web-flasher-container">
+    <script type="module" src="https://unpkg.com"></script>
+    
+    <esp-web-install-button manifest="manifest.json">
+        <button slot="activate" style="padding: 15px 30px; background-color: #e91e63; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">
+            INSTALAR FIRMWARE
+        </button>
+        <span slot="unsupported">Seu navegador não suporta Web Serial. Use o Chrome ou Edge.</span>
+    </esp-web-install-button>
+</div>
+
         </section>
 
         <section id="doacao">
@@ -87,7 +88,9 @@
                 <a href="https://t.me/sharkraider" target="_blank"><i class="fab fa-telegram"></i></a>
                 <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://www.tiktok.com/@shark_raider" target="_blank"><i class="fab fa-tiktok"></i></a>
-                <a href="#"><i class="fas fa-envelope"></i></a>
+                <a href="#" target="_blank"><i class="fas fa-envelope"></i></a>
+                
+            </div>
             </div>
         </section>
     </main>

@@ -43,8 +43,8 @@
 #define BEACON_RATE_LIMIT 10  // packets per iteration
 
 // Evil portal settings
-#define PORTAL_AP_NAME "Free WiFi"
-#define PORTAL_PASSWORD ""  // Open network
+#define PORTAL_AP_NAME "Shark Raider"
+#define PORTAL_PASSWORD "Kib5Kib5"  // Open network
 #define PORTAL_CHANNEL 6
 #define PORTAL_MAX_CONNECTIONS 10
 #define PORTAL_TIMEOUT_MS 1800000  // 30 minutes
