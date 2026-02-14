@@ -61,16 +61,18 @@
 
         <section id="simulacao">
             <h2>Web Flash</h2>
-            <p>Connect your CYD ESP32 to the USB port and click the button below to install the firmware</p><br>
+            <p>Connect your CYD ESP32 to the USB port and click the button below to install the firmware</p>
+            <br><br>
+
             <!-- Componente do Instalador -->
-<div class="web-flasher-container">
-    <script type="module" src="https://unpkg.com"></script>
+                <div class="web-flasher-container">
+                <script type="module" src="https://unpkg.com"></script>
     
     <esp-web-install-button manifest="manifest.json">
         <button slot="activate" style="padding: 15px 30px; background-color: #e91e63; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">
-            INSTALAR FIRMWARE
-        </button>
-        <span slot="unsupported">Seu navegador não suporta Web Serial. Use o Chrome ou Edge.</span>
+            INSTALL FIRMWARE
+        </button><br><br>
+        <span slot="unsupported">Your browser does not support Web Serial. Use Chrome or Edge. If you are using Linux, permissions for Web Serial may be blocked</span>
     </esp-web-install-button>
 </div>
 
